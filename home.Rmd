@@ -9,4 +9,5 @@ output: html_document
     - Эвиденциальность (Самира Ферхейс)
     - …
 
-### Участники проекта:
+Участники проекта: 
+Все материалы проекта лежат на [github](https://github.com/agricolamz/AtCauc)
