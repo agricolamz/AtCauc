@@ -6,7 +6,7 @@ output: html_document
 
 - [Атлас адыгских языков](Adyghe.atlas/adyghe_atlas.html)
 - Атлас дагестанских языков
-    - Эвиденциальность (Самира Ферхейс)
+    - [Аффектив](Dagestanian.atlas/affective/dag_affective.html)
     - …
 
 Участники проекта: 
