@@ -4,7 +4,7 @@ output: html_document
 ---
 На данном сайте размещены атласы языков Кавказа.
 
-- [Атлас адыгских языков](Adyghe.atlas/adyghe_atlas.html)
+- [Атлас адыгских языков](Adyghe.atlas/all/adyghe_atlas.html)
 - Атлас дагестанских языков
     - [Аффектив](Dagestanian.atlas/affective/dag_affective.html)
     - …
