@@ -1,5 +1,27 @@
+<head>
+  <meta charset="utf-8">
+  <title>Report</title>
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+  <script src="jquery-ui/external/jquery/jquery.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+
+<div id="tabs">
+<ul>
+<li><a href="#atlasru">Аффектив</a></li>
+<li><a href="#aboutru">Подробнее о карте</a></li>
+</ul>
+
+<div id="atlasru">
+## Аффектив в дагестанских языках
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Dagestanian.atlas/affective/dag_affective_big.html"> во весь экран </a>
+```{r, echo=FALSE, message=FALSE}
 library(leaflet)
-setwd("/home/agricolamz/_DATA/OneDrive1/_Work/Atlas.of.Caucasian.Languages/Dagestanian.atlas/affective")
 dag <- read.csv("dag_affective.csv")
 write.csv(dag, "dag_affective.csv", row.names = F)
 palforlang <- colorFactor(c("#53FA05", # Agul
@@ -54,7 +76,7 @@ dagplot <- leaflet(dag) %>%
                    color = palforlang(dag$language), 
                    group = dag$language) %>%
 addLegend(title = "",
-          position = c("bottomleft"),
+          position = c("bottomright"),
           pal = palforlang,
           values = dag$language,
           opacity = 0.9)%>%
@@ -64,6 +86,8 @@ addLegend(title = "",
           values = dag$affective,
           opacity = 0.9)
 dagplot
-
-
-
+```
+</div>
+<div id="aboutru">
+## Подробнее о карте
+</div>
