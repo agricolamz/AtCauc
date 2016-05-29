@@ -1,13 +1,19 @@
 ---
-title: "Атласы языков Кавказа"
+title: "Атласы языков мира"
+subtitle: "Лаборатария языков Кавказа"
 output: html_document
 ---
-На данном сайте размещены атласы языков Кавказа.
+На данном сайте размещены:
 
 - [Атлас адыгских языков](Adyghe.atlas/all/adyghe_atlas.html)
 - Атлас дагестанских языков
     - [Аффектив](Dagestanian.atlas/affective/dag_affective.html)
     - …
+- Атлас числительных в языках Америки
+    - [Языковые семьи](Numearals.Amerika.atlas/family/numerals.america.family.html)
+    - [Базисы систем счисления](Numearals.Amerika.atlas/base/numerals.america.base.html)
+    - [Пределы систем счисления](Numearals.Amerika.atlas/limit/numerals.america.limit.html)
+    - [Показатели сложения](Numearals.Amerika.atlas/adding.marker/numerals.america.adding.marker.html)
 
 Участники проекта: 
 Все материалы проекта лежат на [github](https://github.com/agricolamz/AtCauc)

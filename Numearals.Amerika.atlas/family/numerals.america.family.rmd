@@ -1,0 +1,90 @@
+<head>
+  <meta charset="utf-8">
+  <title>Report</title>
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+  <script src="jquery-ui/external/jquery/jquery.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+
+<div id="tabs">
+<ul>
+<li><a href="#atlasru">Языковые семьи</a></li>
+<li><a href="#aboutru">Подробнее о карте</a></li>
+</ul>
+
+<div id="atlasru">
+## Числительные в языках Америки: языковые семьи
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/family/numerals.america.family.big.html"> во весь экран </a>
+```{r, echo=FALSE, message=FALSE}
+library(leaflet)
+setwd("/home/agricolamz/_DATA/OneDrive1/_Work/Atlas.of.Caucasian.Languages/Numearals.Amerika.atlas/family")
+america <- read.csv("MapLang.csv")
+america <- america[1:81*2,]
+colnames(america)[14] <- ("fnam")
+colnames(america)[5] <- ("limit")
+colnames(america)[6] <- ("adding")
+colnames(america)[9] <- ("base")
+library(leaflet)
+pal <- colorFactor(c( "#00FF00", # Algic
+                      "#FFD700", # Araucanian
+                      "#EA7500", # Arawakan
+                      "#006633", # Arawan
+                      "#FFDDC7", # Athapaskan-Eyak-Tlingit
+                      "#5509D9", # Boran
+                      "#B54E09", # Carib
+                      "#E85313", # Chapacuran
+                      "#FFD800", # Chibchan
+                      "#BEF574", # Chinookan
+                      "#ECEBBD", # Chocoan
+                      "#FF4F00", # Chumashan
+                      "#98FF98", # Eskimo-Aleut
+                      "#C3B091", # Iroquoian
+                      "#0B8A3E", # Isolate
+                      "#996666", # Kiowa-Tanoan
+                      "#1DACD6", # Mayan
+                      "#924E7D", # Mixe-Zoque
+                      "#CCCCFF", # Muskogean
+                      "#1974D2", # Nadahup
+                      "#0AF7D3", # Nambiquaran
+                      "#FFDEAD", # Otomanguean
+                      "#00BFFF", # Palaihnihan
+                      "#E000E0", # Pano-Tacanan
+                      "#561394", # Quechuan
+                      "#FF9ECF", # Salishan
+                      "#FF4255", # Siouan
+                      "#E0FFFF", # Tacanan
+                      "#B0C4DE", # Totonacan
+                      "#7442C8", # Tucanoan
+                      "#00CCCC", # Tupian
+                      "#3B2316", # Uto-Aztecan
+                      "#721422" # Wakashan
+                      ), domain = america$fnam)
+
+m <- leaflet(america) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addCircleMarkers(lng=america$lng, # широта
+                   lat=america$lat, # долгота
+                   popup=america$lang, # высвечивается при нажатии
+                   stroke = T, # нужна ли обводка для кружочков
+                   radius = 5, # радиус маркера
+                   fillOpacity = 1, # прозрачность
+                   color = pal(america$fnam),
+                   group = america$fnam) %>%
+addLegend(position = c("bottomleft"),
+          pal = pal,# раскраска
+          values = america$fnam,
+          opacity = 1) %>%
+addLayersControl(overlayGroups = america$fnam,
+                 options = layersControlOptions(collapsed = F))
+m
+```
+</div>
+<div id="aboutru">
+## Подробнее о карте
+Работу выполнила И. Картозия.
+</div>
