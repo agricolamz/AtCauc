@@ -1,0 +1,63 @@
+<head>
+  <meta charset="utf-8">
+  <title>Report</title>
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+  <script src="jquery-ui/external/jquery/jquery.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+
+<div id="tabs">
+<ul>
+<li><a href="#atlasru">Латеральные</a></li>
+<li><a href="#aboutru">Подробнее о карте</a></li>
+</ul>
+
+<div id="atlasru">
+## Латеральные в дагестанских языках
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Dagestanian.atlas/laterals/dagestan.laterals.big.html"> во весь экран </a>
+
+```{r, echo=FALSE, message=FALSE}
+# glottocode link generator
+glotto <- function(glottocode, name){
+paste("<a href='",
+      "http://glottolog.org/resource/languoid/id/",
+      glottocode,
+      "' target='_blank'>",
+      name,
+      "</a>", sep = "")}
+
+library(leaflet)
+setwd("/home/agricolamz/_DATA/OneDrive1/_Work/Atlas.of.Caucasian.Languages/Dagestanian.atlas/labialization")
+df <- read.csv("Sigova.DaghPhon.csv")
+pal <- colorFactor(c("#B22222", # 5
+   "#FFD700", # 10
+   "#BA55D3"  # 100+
+), domain = df$laterals.type)
+m <- leaflet(df) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addCircleMarkers(lng=df$longitude,
+                   lat=df$latitude,
+                   popup=glotto(df$glottocode, df$language),
+                   stroke = T,
+                   radius = 5,
+                   fillOpacity = 1, # прозрачность
+                   color = pal(df$laterals.type),
+                   group = df$laterals.type) %>%
+  addLegend(title = "латеральные",
+            position = c("bottomleft"),
+            pal = pal,# раскраска
+            values = df$laterals.type,
+            opacity = 1) %>%
+  addLayersControl(overlayGroups = df$laterals.type,
+  options = layersControlOptions(collapsed = F))
+m
+```
+</div>
+<div id="aboutru">
+Работу выполнили Ф. Голосов, Н. Панова, К. Романова, С. Сигова, Л. Федоренко, М. какая.у.него.фамилия???
+</div>
