@@ -53,7 +53,7 @@ colnames(america)[9] <- ("base")
 Инга Картозия (inga.kartoziya@gmail.com)
 </div>
 <div id="family">
-<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/family.big.html" target='_blank'> во весь экран </a>
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/family.big.html" target='_blank'> во весь экран (+ легенда) </a>
 ```{r, echo=FALSE, message=FALSE}
 library(leaflet)
 pal <- colorFactor(c( "#00FF00", # Algic
@@ -173,7 +173,6 @@ m
 10 и 20 — от 20.
 </div>
 <div id="sums">
-## Показатели сложения
 <a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/adding.marker.big.html" target='_blank'> во весь экран </a>
 ```{r, echo=FALSE, message=FALSE}
 library(leaflet)
