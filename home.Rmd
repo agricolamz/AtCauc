@@ -7,18 +7,14 @@ output: html_document
 
 - [Атлас адыгских языков](Adyghe.atlas/all/adyghe_atlas.html)
 - Атлас дагестанских языков
-    - [Лабиализация](Dagestanian.atlas/labialization/dagestan.labialization.html)
-    - [Геминаты](Dagestanian.atlas/gemination/dagestan.gemination.html)
-    - [Латералы](Dagestanian.atlas/laterals/dagestan.laterals.html)
-    - [Фарингализация](Dagestanian.atlas/pharyngealization/dagestan.pharyngealization.html)
-    - [Сильные абруптивные](Dagestanian.atlas/strong.ejectives/dagestan.strong.ejectives.html)
-    - [Звонкие увулярные](Dagestanian.atlas/voiced.uvular/dagestan.voiced.uvular.html)
+    - [Лабиализация (С. Сигова и др.)](Dagestanian.atlas/labialization/dagestan.labialization.html)
+    - [Геминаты (С. Сигова и др.)](Dagestanian.atlas/gemination/dagestan.gemination.html)
+    - [Латералы (С. Сигова и др.)](Dagestanian.atlas/laterals/dagestan.laterals.html)
+    - [Фарингализация (С. Сигова и др.)](Dagestanian.atlas/pharyngealization/dagestan.pharyngealization.html)
+    - [Сильные абруптивные (С. Сигова и др.)](Dagestanian.atlas/strong.ejectives/dagestan.strong.ejectives.html)
+    - [Звонкие увулярные (С. Сигова и др.)](Dagestanian.atlas/voiced.uvular/dagestan.voiced.uvular.html)
     - [Аффектив](Dagestanian.atlas/affective/dag_affective.html)
-- Атлас числительных в языках Америки
-    - [Языковые семьи](Numearals.Amerika.atlas/family/numerals.america.family.html)
-    - [Базисы систем счисления](Numearals.Amerika.atlas/base/numerals.america.base.html)
-    - [Пределы систем счисления](Numearals.Amerika.atlas/limit/numerals.america.limit.html)
-    - [Показатели сложения](Numearals.Amerika.atlas/adding.marker/numerals.america.adding.marker.html)
+- [Атлас числительных в языках Америки (И. Картозия)](Numearals.Amerika.atlas/Numearals.Amerika.atlas.html)
 
 Участники проекта: 
 Все материалы проекта лежат на [github](https://github.com/agricolamz/AtCauc)

@@ -1,28 +1,28 @@
-language,branch,glottocode,latitude,longitude,source,gemination.type,gemination.number,strong.ejectives.type,strong.ejective.number,labialization.type,labialization.number,laterals.type,laterals.number,pharyngealization.type,pharyngealization.number,voiced.uvular.type,voiced.uvular.number,epyglottal.voiceless.fricative.type,epyglottal.voiceless.fricative.number,epyglottal.voiced.fricative.type,epyglottal.voiced.fricative.number
-Akhvakh,Andic,akhv1239,41.70,46.56,K&K,large,37,large,10,large,44,large,14,not attested,0,not attested,0,attested,1,attested,1
-Andi,Andic,andi1255,42.81,46.29,K&K,medium,25,medium,5,medium,13,medium,6,not attested,0,attested,2,not attested,0,not attested,0
-Bagvalal,Andic,bagv1239,42.40,46.10,Magomedova,small,4,small,1,not attested,0,small,4,not attested,0,not attested,0,attested,1,attested,1
-Tindi,Andic,tind1238,42.33,45.92,K&K,large,35,large,11,large,46,medium,11,not attested,0,not attested,0,attested,1,attested,1
-Botlikh,Andic,botl1242,42.77,46.19,Magomedbekova (YM),small,9,medium,4,not attested,0,medium,6,not attested,0,not attested,0,not attested,0,not attested,0
-Godoberi,Andic,ghod1238,42.74,46.23,Tatevosov (YM),small,16,not attested,0,small,13,small,5,not attested,0,not attested,0,attested,1,attested,1
-Chamalal (b),Andic,cham1309,42.50,45.99,K&K,medium,23,medium,7,large,34,large,10,not attested,0,not attested,0,attested,1,attested,1
-Karata,Andic,kara1474,42.65,46.32,Magomedbekova (YM),small,10,small,3,not attested,0,small,5,not attested,0,not attested,0,not attested,0,attested,1
-Avar,Avar,avar1256,41.70,46.56,K&K,not attested,0,not attested,0,medium,18,small,4,not attested,0,not attested,0,attested,1,attested,1
-Bezhta,Tsezic,bezh1248,42.12,46.03,K&K,not attested,0,not attested,0,not attested,0,small,4,not attested,0,not attested,0,attested,1,attested,1
-Hunzib,Tsezic,hunz1247,42.08,46.14,K&K,not attested,0,not attested,0,not attested,0,small,4,not attested,0,not attested,0,attested,1,attested,1
-Hinuq,Tsezic,hinu1240,42.45,45.81,K&K,not attested,0,not attested,0,small,7,small,4,not attested,0,not attested,0,attested,1,not attested,0
-Khwarshi,Tsezic,khva1239,42.27,46.00,Khalilova,large,34,large,9,medium,25,large,11,attested,18,not attested,0,not attested,0,not attested,0
-Tsez,Tsezic,dido1241,42.26,45.81,K&K,not attested,0,not attested,0,small,7,small,4,not attested,0,not attested,0,attested,1,attested,1
-Inxokvari,Tsezic,inxo1238,42.27,46.00,K&K,large,44,large,9,medium,26,large,10,not attested,0,not attested,0,attested,1,attested,1
-Dargwa,Dargwa,darg1241,42.43,47.44,K&K,medium,15,not attested,0,medium,26,small,1,not attested,0,not attested,0,attested,2,attested,2
-Khinalugh,Khinalugh,khin1240,41.18,48.06,K&K,not attested,0,not attested,0,not attested,0,small,2,not attested,0,attested,1,attested,1,attested,1
-Lak,Lak,lakk1252,42.13,47.08,K&K,medium,19,not attested,0,medium,25,small,1,not attested,0,not attested,0,not attested,0,not attested,0
-Archi,Archi,arch1244,42.32,46.83,K&K,large,31,large,8,large,39,large,17,not attested,0,not attested,0,attested,1,attested,1
-Aghul (d),East Lezgic,aghu1253,41.92,47.58,K&K,small,10,not attested,0,small,10,small,1,attested,5,not attested,0,attested,1,attested,1
-Lezgian,East Lezgic,lezg1247,41.52,47.90,K&K,not attested,0,not attested,0,large,42,small,3,not attested,0,not attested,0,attested,1,attested,1
-Tabassaran (b),East Lezgic,taba1259,42.02,47.84,K&K,not attested,0,not attested,0,medium,22,small,1,attested,5,not attested,0,not attested,0,not attested,0
-Budukh,South Lezgic,budu1248,41.23,48.34,K&K,not attested,0,not attested,0,small,7,small,1,not attested,0,attested,1,attested,1,attested,1
-Kryz,South Lezgic,kryt1240,41.18,48.18,K&K,not attested,0,not attested,0,small,10,small,1,not attested,0,attested,2,attested,1,attested,1
-Rutul,West Lezgic,rutu1240,41.62,47.32,K&K,not attested,0,not attested,0,medium,21,small,1,attested,7,attested,3,not attested,0,not attested,0
-Tsakhur,West Lezgic,tsak1249,41.59,46.89,K&K,medium,22,small,2,medium,26,small,2,not attested,0,attested,2,not attested,0,not attested,0
-Udi,Udi-Aghwan,udii1243,40.90,47.72,K&K,not attested,0,not attested,0,not attested,0,small,2,not attested,0,not attested,0,not attested,0,not attested,0
+language,branch,glottocode,latitude,longitude,source,gemination.type,gemination.number,strong.ejectives.type,strong.ejective.number,labialization.type,labialization.number,laterals.type,laterals.number,laterals.popup,pharyngealization.type,pharyngealization.number,voiced.uvular.type,voiced.uvular.number,epyglottal.voiceless.fricative.type,epyglottal.voiceless.fricative.number,epyglottal.voiced.fricative.type,epyglottal.voiced.fricative.number
+Akhvakh,Andic,akhv1239,41.70,46.56,K&K,large,37,large,10,large,44,large,14,"l,",not attested,0,not attested,0,attested,1,attested,1
+Andi,Andic,andi1255,42.81,46.29,K&K,medium,25,medium,5,medium,13,medium,6,,not attested,0,attested,2,not attested,0,not attested,0
+Bagvalal,Andic,bagv1239,42.40,46.10,Magomedova,small,4,small,1,not attested,0,small,4,,not attested,0,not attested,0,attested,1,attested,1
+Tindi,Andic,tind1238,42.33,45.92,K&K,large,35,large,11,large,46,medium,11,,not attested,0,not attested,0,attested,1,attested,1
+Botlikh,Andic,botl1242,42.77,46.19,Magomedbekova (YM),small,9,medium,4,not attested,0,medium,6,,not attested,0,not attested,0,not attested,0,not attested,0
+Godoberi,Andic,ghod1238,42.74,46.23,Tatevosov (YM),small,16,not attested,0,small,13,small,5,,not attested,0,not attested,0,attested,1,attested,1
+Chamalal (b),Andic,cham1309,42.50,45.99,K&K,medium,23,medium,7,large,34,large,10,,not attested,0,not attested,0,attested,1,attested,1
+Karata,Andic,kara1474,42.65,46.32,Magomedbekova (YM),small,10,small,3,not attested,0,small,5,,not attested,0,not attested,0,not attested,0,attested,1
+Avar,Avar,avar1256,41.70,46.56,K&K,not attested,0,not attested,0,medium,18,small,4,,not attested,0,not attested,0,attested,1,attested,1
+Bezhta,Tsezic,bezh1248,42.12,46.03,K&K,not attested,0,not attested,0,not attested,0,small,4,,not attested,0,not attested,0,attested,1,attested,1
+Hunzib,Tsezic,hunz1247,42.08,46.14,K&K,not attested,0,not attested,0,not attested,0,small,4,,not attested,0,not attested,0,attested,1,attested,1
+Hinuq,Tsezic,hinu1240,42.45,45.81,K&K,not attested,0,not attested,0,small,7,small,4,,not attested,0,not attested,0,attested,1,not attested,0
+Khwarshi,Tsezic,khva1239,42.27,46.00,Khalilova,large,34,large,9,medium,25,large,11,,attested,18,not attested,0,not attested,0,not attested,0
+Tsez,Tsezic,dido1241,42.26,45.81,K&K,not attested,0,not attested,0,small,7,small,4,,not attested,0,not attested,0,attested,1,attested,1
+Inxokvari,Tsezic,inxo1238,42.27,46.00,K&K,large,44,large,9,medium,26,large,10,,not attested,0,not attested,0,attested,1,attested,1
+Dargwa,Dargwa,darg1241,42.43,47.44,K&K,medium,15,not attested,0,medium,26,small,1,,not attested,0,not attested,0,attested,2,attested,2
+Khinalugh,Khinalugh,khin1240,41.18,48.06,K&K,not attested,0,not attested,0,not attested,0,small,2,,not attested,0,attested,1,attested,1,attested,1
+Lak,Lak,lakk1252,42.13,47.08,K&K,medium,19,not attested,0,medium,25,small,1,,not attested,0,not attested,0,not attested,0,not attested,0
+Archi,Archi,arch1244,42.32,46.83,K&K,large,31,large,8,large,39,large,17,,not attested,0,not attested,0,attested,1,attested,1
+Aghul (d),East Lezgic,aghu1253,41.92,47.58,K&K,small,10,not attested,0,small,10,small,1,,attested,5,not attested,0,attested,1,attested,1
+Lezgian,East Lezgic,lezg1247,41.52,47.90,K&K,not attested,0,not attested,0,large,42,small,3,,not attested,0,not attested,0,attested,1,attested,1
+Tabassaran (b),East Lezgic,taba1259,42.02,47.84,K&K,not attested,0,not attested,0,medium,22,small,1,,attested,5,not attested,0,not attested,0,not attested,0
+Budukh,South Lezgic,budu1248,41.23,48.34,K&K,not attested,0,not attested,0,small,7,small,1,,not attested,0,attested,1,attested,1,attested,1
+Kryz,South Lezgic,kryt1240,41.18,48.18,K&K,not attested,0,not attested,0,small,10,small,1,,not attested,0,attested,2,attested,1,attested,1
+Rutul,West Lezgic,rutu1240,41.62,47.32,K&K,not attested,0,not attested,0,medium,21,small,1,,attested,7,attested,3,not attested,0,not attested,0
+Tsakhur,West Lezgic,tsak1249,41.59,46.89,K&K,medium,22,small,2,medium,26,small,2,,not attested,0,attested,2,not attested,0,not attested,0
+Udi,Udi-Aghwan,udii1243,40.90,47.72,K&K,not attested,0,not attested,0,not attested,0,small,2,,not attested,0,not attested,0,not attested,0,not attested,0

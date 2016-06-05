@@ -1,0 +1,365 @@
+<head>
+  <meta charset="utf-8">
+  <title>Report</title>
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+  <script src="jquery-ui/external/jquery/jquery.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+## Числительные языков Америки
+<div id="tabs">
+<ul>
+<li><a href="#about">об исследовании</a></li>
+<li><a href="#family">языковые семьи</a></li>
+<li><a href="#limit">пределы</a></li>
+<li><a href="#base">базис</a></li>
+<li><a href="#sums">показатели сложения</a></li>
+<li><a href="#references">список литературы</a></li>
+</ul>
+
+<div id="about">
+```{r, echo=FALSE}
+# glottocode link generator
+glotto <- function(glottocode, name){
+paste("<a href='",
+      "http://glottolog.org/resource/languoid/id/",
+      glottocode,
+      "' target='_blank'>",
+      name,
+      "</a>", sep = "")}
+setwd("/home/agricolamz/_DATA/OneDrive1/_Work/Atlas.of.Caucasian.Languages/Numearals.Amerika.atlas")
+america <- read.csv("MapLang.csv")
+colnames(america)[14] <- ("fnam")
+colnames(america)[5] <- ("limit")
+colnames(america)[6] <- ("adding")
+colnames(america)[9] <- ("base")
+```
+Ареал: Северная, Центральная и Южная Америка
+
+Материал: 81 язык и 32 семьи
+
+Предмет исследования: аспекты систем числительных языков данного арела:
+
+- предел системы счисления
+- системы счисления (базис)
+- показатели сложения
+
+Цель исследования: выявление типологических профилей и отнесение исследуемых языков к тому или иному профилю с нанесением полученных типологических особенностей на карту
+
+Инга Картозия (inga.kartoziya@gmail.com)
+</div>
+<div id="family">
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/family.big.html" target='_blank'> во весь экран </a>
+```{r, echo=FALSE, message=FALSE}
+library(leaflet)
+pal <- colorFactor(c( "#00FF00", # Algic
+                      "#FFD700", # Araucanian
+                      "#EA7500", # Arawakan
+                      "#006633", # Arawan
+                      "#FFDDC7", # Athapaskan-Eyak-Tlingit
+                      "#5509D9", # Boran
+                      "#B54E09", # Carib
+                      "#E85313", # Chapacuran
+                      "#FFD800", # Chibchan
+                      "#BEF574", # Chinookan
+                      "#ECEBBD", # Chocoan
+                      "#FF4F00", # Chumashan
+                      "#98FF98", # Eskimo-Aleut
+                      "#C3B091", # Iroquoian
+                      "#0B8A3E", # Isolate
+                      "#996666", # Kiowa-Tanoan
+                      "#1DACD6", # Mayan
+                      "#924E7D", # Mixe-Zoque
+                      "#CCCCFF", # Muskogean
+                      "#1974D2", # Nadahup
+                      "#0AF7D3", # Nambiquaran
+                      "#FFDEAD", # Otomanguean
+                      "#00BFFF", # Palaihnihan
+                      "#E000E0", # Pano-Tacanan
+                      "#561394", # Quechuan
+                      "#FF9ECF", # Salishan
+                      "#FF4255", # Siouan
+                      "#E0FFFF", # Tacanan
+                      "#B0C4DE", # Totonacan
+                      "#7442C8", # Tucanoan
+                      "#00CCCC", # Tupian
+                      "#3B2316", # Uto-Aztecan
+                      "#721422" # Wakashan
+                      ), domain = america$fnam)
+
+m <- leaflet(america) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addCircleMarkers(lng=america$lng, # широта
+                   lat=america$lat, # долгота
+                   popup=glotto(america$language.glotcode, america$lang), # высвечивается при нажатии
+                   stroke = T, # нужна ли обводка для кружочков
+                   radius = 5, # радиус маркера
+                   fillOpacity = 1, # прозрачность
+                   color = pal(america$fnam),
+                   group = america$fnam)
+m
+```
+32 языковые семьи и 6 изолятов (атакапа, мочика, тонкава, туника, вашо и ючи).
+</div>
+<div id="limit">
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/limit.big.html" target='_blank'> во весь экран </a>
+```{r, echo=FALSE, message=FALSE}
+library(leaflet)
+pal <- colorFactor(c("#B22222", # 5
+                     "#FFD700", # 10
+                     "#2E8B57", # 20
+                     "#6495ED", # 100
+                     "#BA55D3" # 100+
+                     ), domain = america$limit)
+m <- leaflet(america) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addCircleMarkers(lng=america$lng, # широта
+                   lat=america$lat, # долгота
+                   popup=glotto(america$language.glotcode, america$lang), # высвечивается при нажатии
+                   stroke = T, # нужна ли обводка для кружочков
+                   radius = 5, # радиус маркера
+                   fillOpacity = 1, # прозрачность
+                   color = pal(america$limit),
+                   group = america$limit) %>%
+addLegend(position = c("bottomleft"),
+          pal = pal,# раскраска
+          values = america$limit,
+          opacity = 1) %>%
+addLayersControl(overlayGroups = america$limit,
+                 options = layersControlOptions(collapsed = F))
+m
+```
+Предел системы числительных — это максимальное число, которое можно выразить на конкретном языке.
+Инесеньо (13) и маттоле (12), по данным Ethnologue, имеют 9 по шкале EGIDS, т.е. они не имеют активных
+носителей, и существуют только фрагментарные и остаточные знания.
+</div>
+<div id="base">
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/base.big.html" target='_blank'> во весь экран </a>
+```{r, echo=FALSE, message=FALSE}
+library(leaflet)
+pal <- colorFactor(c("#00FA9A", # 10
+                     "#F08080", # 20
+                     "#FF9ECF", # 5
+                     "#B22222", # 4
+                     "#4169E1" # mixed
+), domain = america$base)
+m <- leaflet(america) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addCircleMarkers(lng=america$lng, # широта
+                   lat=america$lat, # долгота
+                   popup=glotto(america$language.glotcode, america$lang), # высвечивается при нажатии
+                   stroke = T, # нужна ли обводка для кружочков
+                   radius = 5, # радиус маркера
+                   fillOpacity = 1, # прозрачность
+                   color = pal(america$base),
+                   group = america$base) %>%
+addLegend(position = c("bottomleft"),
+          pal = pal,# раскраска
+          values = america$base,
+          opacity = 1) %>%
+addLayersControl(overlayGroups = america$base,
+                 options = layersControlOptions(collapsed = F))
+m
+```
+Базисом системы счисления — это такие корни, которые обозначают группировки элементов.
+Базис 4 имеет язык инесеньо.
+Смешанный базис означает наличие более одной подсистемы в системе счисления. В выборке такой базис имеет тлингит,
+где есть 2 системы числительных: старая и новая (различия появляются с 30). Молодое поколение почти не знакомо со
+старой системой. Старая система имеет базисы 5 и 20, новая — 5 и 10. Базис 5 используется для выражения чисел до 20, а
+10 и 20 — от 20.
+</div>
+<div id="sums">
+## Показатели сложения
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/adding.marker.big.html" target='_blank'> во весь экран </a>
+```{r, echo=FALSE, message=FALSE}
+library(leaflet)
+pal <- colorFactor(c("pink", "blue"), domain = america$adding)
+m <- leaflet(america) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addCircleMarkers(lng=america$lng, # широта
+                   lat=america$lat, # долгота
+                   popup=glotto(america$language.glotcode, america$lang), # высвечивается при нажатии
+                   stroke = T, # нужна ли обводка для кружочков
+                   radius = 5, # радиус маркера
+                   fillOpacity = 1, # прозрачность
+                   color = pal(america$adding),
+                   group = america$adding) %>%
+addLegend(position = c("bottomleft"),
+          pal = pal,# раскраска
+          values = america$adding,
+          opacity = 1) %>%
+addLayersControl(overlayGroups = america$adding,
+                 options = layersControlOptions(collapsed = F))
+m
+```
+Показатели сложения — это лингвистический конструкт, позволяющий обобщать и систематизировать языковые данные.
+В выборке к языкам с показателем сложения относят языки, имеющие морфологически выраженные показатели.
+Показатель сложения языка чичимеко (ото-мангская) изменяется по числам: -nùnts (SG), -nùntsès (DUAL), -gàts (PL).
+Только апурина и варихио имеют и заимствования, и показатель сложения в своем языке.
+</div>
+<div id="references">
+Abbott, C. (2006). Oneida teaching grammar. University of Wisconsin–Green Bay, p 
+
+Aikhenvald, A. Y. (2003). A grammar of Tariana, from northwest Amazonia. Cambridge University Press, p 103, p 217
+
+Allin, T. R. (1976). A grammar of Resígaro (Vol. 1&2). Summer Institute of Linguistics, p 103, 200, 235
+
+Andrews, J. R. (2003). Introduction to classical Nahuatl (Vol. 1). University of Oklahoma Press, p 644
+
+Applegate, R. (1966). Ineseño Chumash Grammar, p 184
+
+Beck, D. (2004). A grammatical sketch of Upper Necaxa Totonac. Munich: LINCOM Europa, p 26
+
+Bergsland, K. (1997). Aleut Grammar: Unangam Tunuganaan Achixaasix. A Descriptive Reference Grammar of the Alteutian, Pribilof, and Commander Islands Aleut Language. Alaska Native Language Center Research Paper Number 10, p 63
+
+Blackbird, A.J. (1887) Ottawa and Chippewa Indians of Michigan: A Grammar Of Their Language, And Personal And Family History Of The Author. The Yipsilantian Job Printing House, p 120
+
+Boas, F., & Deloria, E. C. (1941). Dakota grammar (Vol. 23). Dakota Press, p 113
+
+Brinton, D. G. (1871). The Arawack language of Guiana in its linguistic and ethnological relations (Vol. 14). McCalla & Stavely. p. 430
+
+Brinton, D. G. (1884). A grammar of the Cakchiquel language of Guatemala. Proceedings of the American Philosophical Society, p 408
+
+Broadwell, G. A. (2006). A Choctaw reference grammar. U of Nebraska Press, pp 235-239
+
+Buckner, H. F., & Herrod, G. (1860). A grammar of the Maskwke or Creek language. Marion, p 27
+
+Carpenter, L. K. (1982). Equadorian Quichua: descriptive sketch and variation (Doctoral dissertation, Univ. of Florida), p 201
+
+Cook, E. D. (1984). A Sarcee grammar. UBC Press, p 76
+
+Courtz, H. (2008). A Carib grammar and dictionary. Magoria Books, p 106
+
+Cowell, A., with Alonzo Moss, Sr. (2008) The Arapaho Language. University Press of Colorado, p 451
+
+Crippen, J.A. (2008) Notes on Tlingit Grammar, pp 205-208
+
+Crowhurst, M., & Epps, P. (2009). A Grammar of Sierra Popoluca (Soteapanec, a Mixe-Zoquean Language), p 244
+
+Dayley, J. P. (1985). Tzutujil grammar (Vol. 107). University of California Press, p 159
+
+de Angulo, J. (1933). The Chichimeco language (Central Mexico). International Journal of American Linguistics, 7(3/4), p 183
+
+De Angulo, J., & Freeland, L. S. (1930). The Achumawi Language. International Journal of American Linguistics, 6(2), p 86
+
+de Araujo, G. A. (2004). A grammar of Sabanê: A Nambikwaran language. Netherlands Graduate School of Linguistics, p 95
+
+Dixon, R.M.W. (2004) The Jarawa Language Of Southern Amazonia. The Oxford University Press, p 559
+DuBois, J. (1981). The Sacapultec language, p 213
+
+Eberhard, D. M. (2009). Mamainde Grammar, p 500
+
+Edel, M. M. (1939). The Tillamook language. International Journal of American Linguistics, 10(1), p 49
+
+Epps, P. (2008). A grammar of Hup (Mouton Grammar Library 43). Berlin: Mouton de Gruyter, p 309
+
+Everett, C. (2006). Patterns in Karitiana: Articulation, perception, and grammar (Doctoral dissertation, Rice Univ. Houston), p 315
+
+Everett, D.L., Kern, B. (1997). Wari’. Descriptive grammars, p 338
+
+Facundes, S. D. S. (2000). The language of the Apurinã people of Brazil (Maipure/Arawak) (Doctoral dissertation, SUNY Buffalo), p 359
+
+Félix, R. (2005). A Grammar of River Warihio. Unpublished Ph. D. Dissertation, Rice University, pp 72–76, p 82
+
+Fleck, D. W. (2003). A grammar of Matses (Doctoral dissertation, UMI Ann Arbor), p 559
+
+Foris, D. P. (1994). A grammar of Sochiapan Chinantec (Doctoral dissertation, University of Auckland), pp 302–311
+
+Gatschet, A. S. (1900). Grammatic sketch of the Catawba language. American Anthropologist, 2(3), p 534
+
+Givón, T. (2011). Ute reference grammar (Vol. 3). John Benjamins Publishing, p 51
+
+Goddard, P. E. (1912). Texts and analysis of Cold Lake dialect, Chipewyan. order of the Trustees [of the American Museum of Natural History], p 115
+
+González, H. A. (2005). A grammar of Tapiete (Tupi-Guarani) (Doctoral dissertation, University of Pittsburgh), p 125
+
+Green, D. (2001). Palikur Numerals. Summer Institute of Linguistics (Brazil), pp 1-44.
+
+Grune, D. A (1994). Survey of the Athabaskan Language Mattole, p 6
+
+Guillaume, A. (2008). A grammar of Cavineña (Vol. 44). Walter de Gruyter, p 491, p 74
+
+Hale, H. (1883). The Tutelo tribe and language. Proceedings of the American Philosophical Society, p 20
+
+Hall, A. J. (1889). A grammar of the Kwagiutl language, p 67
+
+Harms, P. L. (1994). Epena Pedee Syntax. Summer Institute of Linguistics, p 53
+
+Harrington, J. P. (1910). AN INTRODUCTORY PAPER ON THE TIWA LANGUAGE, DIALECT OF TAOS, NEW MEXICO. American Anthropologist, 12(1), p 30
+
+Haviland, J., Robinson, J., Gutierrez, E. A Tzotzil Grammar: Numeral Expressions, p 129
+
+Hill, J. H. (2005). A grammar of Cupeño (Vol. 136). Univ of California Press, p 210
+
+Hockett, C. F. (1948). Potawatomi IV: Particles and Sample Text. International Journal of American Linguistics, 14(4), pp 213–214
+
+Hoijer, H. (1933). Tonkawa: An Indian language of Texas. Extract from Handbook of American Indian Languages, Vol. III, p 121
+
+Holmer, N. M. (1949). Goajiro (Arawak) II. Nouns and associated morphemes. International Journal of American Linguistics, 15(2), p 116
+
+Hovdhaugen, E. (2004). Mochica (Vol. 433). Lincom GmbH, München, p 25
+
+Jacobs, M. (1932). Notes on the structure of Chinook Jargon. Language, p 41
+
+Jacobson, S. A., & Jacobson, A. W. (1995). A practical grammar of the Central Alaskan Yup'ik Eskimo language. Alaska Native Language Center and Program, University of Alaska, p 171, p 451
+
+Johnson, H. A. (2000). A grammar of San Miguel Chimalapa Zoque (Doctoral dissertation, Univ. of Texas Austin), p 65
+
+Jones, W., & Jones, P. (1991). Barasano syntax, p 59
+
+Kennard, E. (1936). Mandan grammar. International Journal of American Linguistics, 9(1), p 29
+
+Knipe, C. (1868). Some account of the Tahkaht language, as spoken by several tribes of the western coast of Vancouver Island, p 2, p 12
+
+Kroeber, A. L. (1907). The Washo language of east central California and Nevada (Vol. 4). The University Press, p 299
+
+Kroeker, M. (2001). A descriptive grammar of Nambikuara. International Journal of American Linguistics, p 49
+
+Kung, S. S. (2007). A descriptive grammar of Huehuetla Tepehua, p 479
+
+Leavitt, R.M. (1996) Passamaquoddy-Maliseet. LINCOM EUROPA, p 50
+
+Maclean, R.J. (1896) The Blackfoot Language, pp 29-34
+
+McFarland, T. A. (2009). The phonology and morphology of Filomeno Mata Totonac (Doctoral dissertation, University of California, Berkeley), p 105
+
+Montgomery-Anderson, B. (2008). A reference grammar of Oklahoma Cherokee. ProQuest, p 516
+
+Quesada, J. D. (2000). A grammar of Teribe (Vol. 36). Lincom Europa, p 48
+
+Rasch, J. W. (2002). The basic morpho-syntax of Yaitepec Chatino, p 82
+
+Reichard, G. A. (1951). Navaho grammar, p 150
+
+Seifart, F. (2005). The structure and use of shape-based noun classes in Miraña (North West Amazon), p 130
+
+Shklovsky, K. (2005). Person Marking in Petalcingo Tzeltal (Doctoral dissertation, Reed College), p 40
+
+Silas Tertius Rand (1875) A First Reading Book in Micmac Language: Comprising The Micmac Numerals, And The Names Of Different Kinds of Beasts, Birds, Fishes, Trees, &etc. Scotia Printing Company, p 64
+
+Swanton, J. R. (1921). The Tunica Language. International Journal of American Linguistics, 2(1/2), p 27
+
+Swanton, J. R. (1929). A sketch of the Atakapa language. International Journal of American Linguistics, 5(2/4), p 140
+
+Tweddell, C. E. (1950). The Snoqualmie-Duwamish Dialects of Puget Sound Coast Salish, p 70
+
+Vallejos Yopán, R. (2010). A grammar of Kokama-Kokamilla (Doctoral dissertation, University of Oregon), pp 264–269
+
+Wagner, G. (1934). Yuchi. Columbia University Press, p 346
+
+Willett, T. L. (1991). A reference grammar of Southeastern Tepehuan, p 84
+
+Wilson, E. F. (1970). The Ojebway Language: A Manual For Missionaries And Others Employed Among the Ojebway Indians, p 21
+
+Wolgemuth C., & Mackay, C. S. (2007). Nahuatl Grammar, p 62
+
+Wonderly, W. L. (1952). Zoque V: Other stem and word classes. International Journal of American Linguistics, p 41
+
+Zepeda, O. (1983). A Papago Grammar. University of Arizona Press, p 117
+
+Zúñiga, F. (2000). Mapudungun. LINCOM EUROPA, p 15
+</div>
