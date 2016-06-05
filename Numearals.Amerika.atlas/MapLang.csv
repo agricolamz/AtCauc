@@ -1,49 +1,49 @@
 language.glotcode,lat,lng,lang,Предел.счисления,Показатель.сложения,Сколько.показателей.сл.,Показатель.умножения,Базис.счисления,Категория.по.пределу,PK,id.x,family,name.x,family_pk,language.isocode,language,language.name,PKlanguage,status
-kari1311,-9.38,-64.15,karitiana,>100,нет (58 языков),0,TBA,5 (10 языков),100+,NA,NA,NA,Tupian,NA,NA,NA,NA,NA,NA
-bora1263,-2.91,-68.91,mirana,>100,нет (58 языков),0,TBA,5 (10 языков),100+,NA,NA,NA,Boran,NA,NA,NA,NA,NA,NA
-aleu1260,52.1228,-174.29,aleut,>100,нет (58 языков),0,TBA,10 (41 язык),100+,34754,eski1264,family,Eskimo-Aleut,34754,ale,language,Aleut,34797,established
-arap1274,43.39,-108.81,arapaho,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
-atak1252,30.9121,-93.0827,atakapa,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,aqp,language,Atakapa,38918,established
-siks1238,49.07,-113.11,blackfoot,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
-cata1285,34.97,-80.89,catawba,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Siouan,NA,NA,NA,NA,NA,NA
-chip1261,58.36,-110.83,chipewyan,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Athapaskan-Eyak-Tlingit,NA,NA,NA,NA,NA,NA
-choc1276,33.90,-94.82,choctaw,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Muskogean,NA,NA,NA,NA,NA,NA
-coca1259,-4.50,-74.00,cocama-cocamilla,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Tupian,NA,NA,NA,NA,NA,NA
-cree1270,31,-87.5,creek,>100,есть (23 языка),1,нет,10 (41 язык),100+,26717,musk1252,family,Muskogean,26717,mus,language,Creek,26728,established
-dako1258,47.69,-102.12,dakota,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Siouan,NA,NA,NA,NA,NA,NA
-imba1240,0.32,-78.37,ecuadorian quichua,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Quechuan,NA,NA,NA,NA,NA,NA
-kwak1269,50.93,-127.31,kwakiutl,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Wakashan,NA,NA,NA,NA,NA,NA
-male1292,45.49,-67.41,Malecite-Passamaquoddy,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
-mand1446,47.66,-102.38,mandan,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Siouan,NA,NA,NA,NA,NA,NA
-mapu1245,-38.7392,-71.277,mapudungun,>100,нет (58 языков),0,TBA,10 (41 язык),100+,36243,arau1255,family,Araucanian,36243,arn,language,Mapudungun,36244,established
-mikm1235,45.99,-65.58,Mi'kmaq,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
-moch1259,-8.01667,-79,mochica,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,omc,language,Mochica,34143,established
-nava1243,36.21,-110.08,navaho,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Athapaskan-Eyak-Tlingit,NA,NA,NA,NA,NA,NA
-nuuc1236,49.61,-126.50,nuu-chah-nulth,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Wakashan,NA,NA,NA,NA,NA,NA
-toho1245,31.80,-112.00,O’odham,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Uto-Aztecan,NA,NA,NA,NA,NA,NA
-cent2136,46.57,-84.15,ojibwa,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
-onei1249,43.77,-84.06,oneida,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Iroquoian,NA,NA,NA,NA,NA,NA
-pali1279,3.64,-51.62,palikur,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Arawakan,NA,NA,NA,NA,NA,NA
-tiwa1255,34.79,-106.66,tiwa,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Kiowa-Tanoan,NA,NA,NA,NA,NA,NA
-tonk1249,30.25,-96.75,tonkawa,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,tqw,language,Tonkawa,38980,established
-tuni1252,30.9888,-92.5403,tunica,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,tun,language,Tunica,38901,established
-tute1247,37.67,-78.75,tutelo,>100,нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Siouan,NA,NA,NA,NA,NA,NA
-yuch1247,35.9615,-95.0393,yuchi,>100,есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,yuc,language,Yuchi,26356,established
-cakc1244,14.47,-90.99,cakchiquel,>100,нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mayan,NA,NA,NA,NA,NA,NA
-gali1262,5.84,-56.83,Carib,>100,есть (23 языка),1,нет,20 (17 языков),100+,NA,NA,NA,Carib,NA,NA,NA,NA,NA,NA
-cent2127,60.31,-161.49,central alaskan yupik,>100,есть (23 языка),1,нет,20 (17 языков),100+,NA,NA,NA,Eskimo-Aleut,NA,NA,NA,NA,NA,NA
-chic1272,21.29,-100.52,chichimeco,>100,есть (23 языка),1,нет,20 (17 языков),100+,NA,NA,NA,Otomanguean,NA,NA,NA,NA,NA,NA
-chim1300,16.65,-94.69,Chimalapa Zoque,>100,нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mixe-Zoque,NA,NA,NA,NA,NA,NA
-clas1250,19.72,-96.97,classical nahuatl,>100,нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Uto-Aztecan,NA,NA,NA,NA,NA,NA
-hueh1236,20.62,-97.93,Huehuetla Tepehua,>100,нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Totonacan,NA,NA,NA,NA,NA,NA
-sout2965,47.26,-122.14,southern puget sound salish,>100,есть (23 языка),1,нет,20 (17 языков),100+,NA,NA,NA,Salishan,NA,NA,NA,NA,NA,NA
-tzut1248,14.64,-91.20,tz’utujil,>100,нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mayan,NA,NA,NA,NA,NA,NA
-tzot1259,16.64,-92.74,tzotzil,>100,нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mayan,NA,NA,NA,NA,NA,NA
-west2644,16.25,-97.32,yaitepec chatino,>100,нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Otomanguean,NA,NA,NA,NA,NA,NA
-zoqu1261,16.65,-94.69,zoque,>100,нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mixe-Zoque,NA,NA,NA,NA,NA,NA
-pota1247,40.95,-89.19,potawatomi,>100,нет (58 языков),0,TBA,нет (11 языков),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
-soch1239,17.80,-96.61,sochiapam chinantec,>100,есть (23 языка),1,нет,нет (11 языков),100+,NA,NA,NA,Otomanguean,NA,NA,NA,NA,NA,NA
-tlin1245,59.4447,-135.29,tlingit,>100,нет (58 языков),0,TBA,mixed,100+,44798,atha1245,family,Athapaskan-Eyak-Tlingit,44798,tli,language,Tlingit,44859,established
+kari1311,-9.38,-64.15,karitiana,>100 (45 языков),нет (58 языков),0,TBA,5 (10 языков),100+,NA,NA,NA,Tupian,NA,NA,NA,NA,NA,NA
+bora1263,-2.91,-68.91,mirana,>100 (45 языков),нет (58 языков),0,TBA,5 (10 языков),100+,NA,NA,NA,Boran,NA,NA,NA,NA,NA,NA
+aleu1260,52.1228,-174.29,aleut,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,34754,eski1264,family,Eskimo-Aleut,34754,ale,language,Aleut,34797,established
+arap1274,43.39,-108.81,arapaho,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
+atak1252,30.9121,-93.0827,atakapa,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,aqp,language,Atakapa,38918,established
+siks1238,49.07,-113.11,blackfoot,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
+cata1285,34.97,-80.89,catawba,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Siouan,NA,NA,NA,NA,NA,NA
+chip1261,58.36,-110.83,chipewyan,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Athapaskan-Eyak-Tlingit,NA,NA,NA,NA,NA,NA
+choc1276,33.90,-94.82,choctaw,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Muskogean,NA,NA,NA,NA,NA,NA
+coca1259,-4.50,-74.00,cocama-cocamilla,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Tupian,NA,NA,NA,NA,NA,NA
+cree1270,31,-87.5,creek,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,26717,musk1252,family,Muskogean,26717,mus,language,Creek,26728,established
+dako1258,47.69,-102.12,dakota,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Siouan,NA,NA,NA,NA,NA,NA
+imba1240,0.32,-78.37,ecuadorian quichua,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Quechuan,NA,NA,NA,NA,NA,NA
+kwak1269,50.93,-127.31,kwakiutl,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Wakashan,NA,NA,NA,NA,NA,NA
+male1292,45.49,-67.41,Malecite-Passamaquoddy,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
+mand1446,47.66,-102.38,mandan,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Siouan,NA,NA,NA,NA,NA,NA
+mapu1245,-38.7392,-71.277,mapudungun,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,36243,arau1255,family,Araucanian,36243,arn,language,Mapudungun,36244,established
+mikm1235,45.99,-65.58,Mi'kmaq,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
+moch1259,-8.01667,-79,mochica,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,omc,language,Mochica,34143,established
+nava1243,36.21,-110.08,navaho,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Athapaskan-Eyak-Tlingit,NA,NA,NA,NA,NA,NA
+nuuc1236,49.61,-126.50,nuu-chah-nulth,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Wakashan,NA,NA,NA,NA,NA,NA
+toho1245,31.80,-112.00,O’odham,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Uto-Aztecan,NA,NA,NA,NA,NA,NA
+cent2136,46.57,-84.15,ojibwa,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
+onei1249,43.77,-84.06,oneida,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Iroquoian,NA,NA,NA,NA,NA,NA
+pali1279,3.64,-51.62,palikur,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,NA,Arawakan,NA,NA,NA,NA,NA,NA
+tiwa1255,34.79,-106.66,tiwa,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Kiowa-Tanoan,NA,NA,NA,NA,NA,NA
+tonk1249,30.25,-96.75,tonkawa,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,tqw,language,Tonkawa,38980,established
+tuni1252,30.9888,-92.5403,tunica,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,tun,language,Tunica,38901,established
+tute1247,37.67,-78.75,tutelo,>100 (45 языков),нет (58 языков),0,TBA,10 (41 язык),100+,NA,NA,NA,Siouan,NA,NA,NA,NA,NA,NA
+yuch1247,35.9615,-95.0393,yuchi,>100 (45 языков),есть (23 языка),1,нет,10 (41 язык),100+,NA,NA,isolate,Isolate,NA,yuc,language,Yuchi,26356,established
+cakc1244,14.47,-90.99,cakchiquel,>100 (45 языков),нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mayan,NA,NA,NA,NA,NA,NA
+gali1262,5.84,-56.83,Carib,>100 (45 языков),есть (23 языка),1,нет,20 (17 языков),100+,NA,NA,NA,Carib,NA,NA,NA,NA,NA,NA
+cent2127,60.31,-161.49,central alaskan yupik,>100 (45 языков),есть (23 языка),1,нет,20 (17 языков),100+,NA,NA,NA,Eskimo-Aleut,NA,NA,NA,NA,NA,NA
+chic1272,21.29,-100.52,chichimeco,>100 (45 языков),есть (23 языка),1,нет,20 (17 языков),100+,NA,NA,NA,Otomanguean,NA,NA,NA,NA,NA,NA
+chim1300,16.65,-94.69,Chimalapa Zoque,>100 (45 языков),нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mixe-Zoque,NA,NA,NA,NA,NA,NA
+clas1250,19.72,-96.97,classical nahuatl,>100 (45 языков),нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Uto-Aztecan,NA,NA,NA,NA,NA,NA
+hueh1236,20.62,-97.93,Huehuetla Tepehua,>100 (45 языков),нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Totonacan,NA,NA,NA,NA,NA,NA
+sout2965,47.26,-122.14,southern puget sound salish,>100 (45 языков),есть (23 языка),1,нет,20 (17 языков),100+,NA,NA,NA,Salishan,NA,NA,NA,NA,NA,NA
+tzut1248,14.64,-91.20,tz’utujil,>100 (45 языков),нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mayan,NA,NA,NA,NA,NA,NA
+tzot1259,16.64,-92.74,tzotzil,>100 (45 языков),нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mayan,NA,NA,NA,NA,NA,NA
+west2644,16.25,-97.32,yaitepec chatino,>100 (45 языков),нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Otomanguean,NA,NA,NA,NA,NA,NA
+zoqu1261,16.65,-94.69,zoque,>100 (45 языков),нет (58 языков),0,TBA,20 (17 языков),100+,NA,NA,NA,Mixe-Zoque,NA,NA,NA,NA,NA,NA
+pota1247,40.95,-89.19,potawatomi,>100 (45 языков),нет (58 языков),0,TBA,нет (11 языков),100+,NA,NA,NA,Algic,NA,NA,NA,NA,NA,NA
+soch1239,17.80,-96.61,sochiapam chinantec,>100 (45 языков),есть (23 языка),1,нет,нет (11 языков),100+,NA,NA,NA,Otomanguean,NA,NA,NA,NA,NA,NA
+tlin1245,59.4447,-135.29,tlingit,>100 (45 языков),нет (58 языков),0,TBA,mixed,100+,44798,atha1245,family,Athapaskan-Eyak-Tlingit,44798,tli,language,Tlingit,44859,established
 utes1238,40.10,-110.31,ute,10 (4 языка),нет (58 языков),0,TBA,5 (10 языков),5,NA,NA,NA,Uto-Aztecan,NA,NA,NA,NA,NA,NA
 huar1255,27.87,-108.44,warihio,10 (4 языка),есть (23 языка),1,нет,5 (10 языков),10,NA,NA,NA,Uto-Aztecan,NA,NA,NA,NA,NA,NA
 cavi1250,-13.3544,-66.6277,cavinena,10 (4 языка),нет (58 языков),0,нет,10 (41 язык),10,43726,taca1255,family,Tacanan,107710,cav,language,Cavineña,43727,established

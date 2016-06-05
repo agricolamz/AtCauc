@@ -95,7 +95,7 @@ m <- leaflet(america) %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   addCircleMarkers(lng=america$lng, # широта
                    lat=america$lat, # долгота
-                   popup=glotto(america$language.glotcode, america$lang), # высвечивается при нажатии
+                   popup= paste(america$fnam, "-", glotto(america$language.glotcode, america$lang)), # высвечивается при нажатии
                    stroke = T, # нужна ли обводка для кружочков
                    radius = 5, # радиус маркера
                    fillOpacity = 1, # прозрачность
