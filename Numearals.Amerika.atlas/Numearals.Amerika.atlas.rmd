@@ -50,7 +50,7 @@ colnames(america)[9] <- ("base")
 
 Цель исследования: выявление типологических профилей и отнесение исследуемых языков к тому или иному профилю с нанесением полученных типологических особенностей на карту
 
-Инга Картозия (inga.kartoziya@gmail.com)
+И. Картозия (inga.kartoziya@gmail.com), Г. Мороз (agricolamz@gmail.com)
 </div>
 <div id="family">
 <a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Numearals.Amerika.atlas/family.big.html" target='_blank'> во весь экран (+ легенда) </a>
