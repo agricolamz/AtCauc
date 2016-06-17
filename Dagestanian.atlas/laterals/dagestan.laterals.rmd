@@ -23,13 +23,14 @@
 
 ```{r, echo=FALSE, message=FALSE}
 # glottocode link generator
-glotto <- function(glottocode, name){
+glotto <- function(glottocode, name, popup){
 paste("<a href='",
       "http://glottolog.org/resource/languoid/id/",
       glottocode,
       "' target='_blank'>",
       name,
-      "</a>", sep = "")}
+      "</a><br>",
+      popup, sep = "")}
 
 library(leaflet)
 setwd("/home/agricolamz/_DATA/OneDrive1/_Work/Atlas.of.Caucasian.Languages/Dagestanian.atlas/labialization")
@@ -42,7 +43,7 @@ m <- leaflet(df) %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   addCircleMarkers(lng=df$longitude,
                    lat=df$latitude,
-                   popup=glotto(df$glottocode, df$language),
+                   popup=glotto(df$glottocode, df$language, df$laterals.popup),
                    stroke = T,
                    radius = 5,
                    fillOpacity = 1, # прозрачность
@@ -59,5 +60,5 @@ m
 ```
 </div>
 <div id="aboutru">
-Работу выполнили Ф. Голосов, Н. Панова, К. Романова, С. Сигова, Л. Федоренко, М. какая.у.него.фамилия???
+Работу выполнили Ф. Голосов, Н. Панова, К. Романова, С. Сигова, Л. Федоренко, М. Воронов
 </div>

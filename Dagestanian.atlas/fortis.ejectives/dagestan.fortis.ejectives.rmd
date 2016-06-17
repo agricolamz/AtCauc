@@ -19,7 +19,7 @@
 
 <div id="atlasru">
 ## Сильные абруптивные в дагестанских языках
-<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Dagestanian.atlas/strong.ejectives/dagestan.strong.ejectives.big.html"> во весь экран </a>
+<a href="http://web-corpora.net/~agricolamz/maps/AtCauc/Dagestanian.atlas/fortis.ejectives/dagestan.fortis.ejectives.big.html"> во весь экран </a>
 
 ```{r, echo=FALSE, message=FALSE}
 # glottocode link generator
@@ -38,7 +38,7 @@ pal <- colorFactor(c("#B22222", # 5
    "#FFD700", # 10
    "#2E8B57", # 20
    "#BA55D3"  # 100+
-), domain = df$strong.ejectives.type)
+), domain = df$fortis.ejectives.type)
 m <- leaflet(df) %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   addCircleMarkers(lng=df$longitude,
@@ -47,18 +47,19 @@ m <- leaflet(df) %>%
                    stroke = T,
                    radius = 5,
                    fillOpacity = 1, # прозрачность
-                   color = pal(df$strong.ejectives.type),
-                   group = df$strong.ejectives.type) %>%
+                   color = pal(df$fortis.ejectives.type),
+                   group = df$fortis.ejectives.type) %>%
   addLegend(title = "сильные абруптивные",
             position = c("bottomleft"),
             pal = pal,# раскраска
-            values = df$strong.ejectives.type,
+            values = df$fortis.ejectives.type,
             opacity = 1) %>%
-  addLayersControl(overlayGroups = df$strong.ejectives.type,
+  addLayersControl(overlayGroups = df$fortis.ejectives.type,
   options = layersControlOptions(collapsed = F))
 m
 ```
+Сильные абруптивные – согласные, характеризуемые напряженной артикуляцией и образующиеся быстрым движением гортани верх при закрытой голосовой щели, а затем расслаблением ротовой смычки.
 </div>
 <div id="aboutru">
- Работу выполнили Ф. Голосов, Н. Панова, К. Романова, С. Сигова, Л. Федоренко, М. какая.у.него.фамилия???
+ Работу выполнили Ф. Голосов, Н. Панова, К. Романова, С. Сигова, Л. Федоренко, М. Воронов
 </div>

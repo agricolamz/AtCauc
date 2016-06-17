@@ -32,7 +32,7 @@ paste("<a href='",
       "</a>", sep = "")}
 
 library(leaflet)
-setwd("/home/agricolamz/_DATA/OneDrive1/_Work/Atlas.of.Caucasian.Languages/Dagestanian.atlas/labialization")
+setwd("/home/agricolamz/_DATA/OneDrive1/_Work/Atlas.of.Caucasian.Languages/Dagestanian.atlas/pharyngealization/")
 df <- read.csv("Sigova.DaghPhon.csv")
 pal <- colorFactor(c("#B22222", # 5
    "#FFD700" # 10
@@ -56,7 +56,8 @@ m <- leaflet(df) %>%
   options = layersControlOptions(collapsed = F))
 m
 ```
+Фарингализация – артикуляция звуков речи, сопровождаемая сужением глотки в нижней или средней области.
 </div>
 <div id="aboutru">
-   Работу выполнили Ф. Голосов, Н. Панова, К. Романова, С. Сигова, Л. Федоренко, М. какая.у.него.фамилия???
+   Работу выполнили Ф. Голосов, Н. Панова, К. Романова, С. Сигова, Л. Федоренко, М. Воронов
 </div>
